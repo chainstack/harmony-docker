@@ -1,3 +1,3 @@
-# harmony-docker
+# near-docker
 
-Repo that contains Dockerfile for Harmony One
+Repo that contains Dockerfile for NEAR
