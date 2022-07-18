@@ -16,10 +16,10 @@ FROM debian:bullseye-slim
 
 RUN adduser --disabled-password --gecos "" --uid 1000 near
 
-COPY --from=build /neard /home/near/neard
+COPY --from=build /neard /usr/local/bin/neard
 
 RUN chown -R near:near /home/near
 
 USER near
 
-ENTRYPOINT ["near"]
+ENTRYPOINT ["neard"]
