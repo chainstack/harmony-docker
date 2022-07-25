@@ -20,6 +20,8 @@ COPY --from=build /neard /usr/local/bin/neard
 
 RUN chown -R near:near /home/near
 
+RUN apt-get update -y && apt-get install curl xz-utils -y
+
 USER near
 
 ENTRYPOINT ["neard"]
