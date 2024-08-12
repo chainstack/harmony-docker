@@ -1,6 +1,6 @@
 FROM rust:1.62.0-bullseye as build
 
-ENV VERSION=2.1.0-rc.2
+ENV VERSION=2.0.0
 
 
 RUN apt-get update -y && apt-get install git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev \
